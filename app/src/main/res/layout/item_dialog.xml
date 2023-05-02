@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:padding="30dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="5dp"
+        >
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:background="#7E2196F3"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/edt_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:hint="NAME..."
+                android:inputType="text"
+                android:textStyle="bold"
+                android:textColor="#2196F3"
+                android:textColorHint="#2196F3"
+                android:background="@drawable/orqa_fon"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_save"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    app:strokeWidth="3dp"
+                    android:layout_gravity="center"
+                    app:strokeColor="#EA0C0C"
+                    app:cornerRadius="10dp"
+                    android:text="CANEL"
+                    android:layout_marginRight="10dp"
+                    android:textColor="#2196F3"
+                    android:backgroundTint="@color/white"/>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_canel"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    app:strokeWidth="3dp"
+                    android:clickable="true"
+                    android:layout_gravity="center"
+                    app:strokeColor="#EA0C0C"
+                    app:cornerRadius="10dp"
+                    android:text="Save"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="#2196F3"
+                    android:backgroundTint="@color/white"
+                    android:focusable="true" />
+            </LinearLayout>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
